@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<link meta charset="UTF-8">
+<link meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Phat-Chat</title>
+
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.scss">
+
+  <script type="html/template" id="msgTmpl">
+    <article data-chatid="<%= _id %>">
+      <h4><%= user %></h4>
+      <p><%= message %></p>
+      <button class="delete-message btn btn-primary btn-xs">Delete</button>
+
+    </article>
+  </script>
+<body>
+  <!--Header-->
+  <div class="row">
+    <nav class="col-xs-8">
+      <h1>Phat Chat</h1>
+    </nav>
+  </div>
+  <div class="row">
+      <div class="aside col-xs-2">
+        <h4></h4>
+        <p></p>
+      </div>
+    <div class="chatbox col-xs-6">
+      <h4></h4>
+      <p></p>
+    </div>
+    <div class="createMessage col-xs-8">
+      <article>
+        <form action="url" method="post">
+          <input type="text" class="form-control name-input input-lg" name="newUser" placeholder="Type your username here" required>
+          <input type="text" class="form-control message-input input-lg" name="newMessage" placeholder="Type your message here">
+          <div class="button">
+            <button type="delete" class="btn btn-lg">Delete</button>
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        </article>
+      </div>
+      </form>
+    </div>
+  </div>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>

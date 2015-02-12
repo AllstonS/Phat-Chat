@@ -1,0 +1,31 @@
+<button class="deleteMessage">Delete</button> | <button class="showEditMessage">Edit</button>
+      <form class="editMessage" action="">
+        <div class="form-group">
+        <input type="text" class="form-control" name="editUser" value="<%= title %>">
+        </div>
+        <div class="form-group">
+          <textarea name="editMessage" class="form-control" id="" cols="30" rows="10">
+            <%= message %>
+          </textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Edit</button>
+      </form>
+
+        initEvents: function () {
+
+    $('.createMessage').on('click', function (event) {
+    //\\   event.preventDefault ();
+    //   $(this).closest('article').find('.editMessage').toggleClass('show');
+    // });
+    //
+    // $('.createMessage').on('submit', 'editMessage', function (event) {
+    //   event.preventDefault();
+    //   var messageId = $(this).closest('article').data('message.Id');
+    //   var editedMessage = {
+    //     user: $(this).find('input[name="editUser"]').val(),
+    //     message: $(this).find('input [name="editMessage"]').val(),
+    //   };
+
+//      chat.updateMessages(messageId, editMessage);
+
+  //  });
