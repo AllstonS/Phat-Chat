@@ -39,7 +39,7 @@ var chat = {
 
     //send the data to the server via ajax :POSTING
     //chat.config.url is the same as typing 'http://tiy-fee-rest.herokuapp.com/collections/griffin'
-    chat.createMessage(newMessage);
+   chat.createMessage(newMessage);
 
     // render data again (by telling it to append inside of box):PUTTING
     chat.renderMessages();
@@ -120,7 +120,7 @@ var chat = {
 //update user needs to happen. Should be able to change or update our own user name
 
 
-  // updateMessage: function (id, message) {
+//  updateMessage: function (id, message) {
   //
   // $.ajax({
   //   url: chat.config.url + '/' + id,

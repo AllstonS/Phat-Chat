@@ -14,34 +14,29 @@
       <h4><%= user %></h4>
       <p><%= message %></p>
       <button class="delete-message btn btn-primary btn-xs">Delete</button>
-
     </article>
   </script>
 <body>
   <!--Header-->
   <div class="row">
-    <nav class="col-xs-8">
+    <nav class="col-xs-12">
       <h1>Phat Chat</h1>
     </nav>
   </div>
   <div class="row">
-      <div class="aside col-xs-2">
-        <h4></h4>
-        <p></p>
-      </div>
-    <div class="chatbox col-xs-6">
+    <div class="chatbox col-xs-12">
       <h4></h4>
       <p></p>
     </div>
-    <div class="createMessage col-xs-8">
-      <article>
+    <div class="createMessage col-xs-12">
+    <article>
         <form action="url" method="post">
           <input type="text" class="form-control name-input input-lg" name="newUser" placeholder="Type your username here" required>
           <input type="text" class="form-control message-input input-lg" name="newMessage" placeholder="Type your message here">
           <div class="button">
-            <button type="delete" class="btn btn-lg">Delete</button>
-            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-        </article>
+      <!-- <button type="delete" class="btn btn-lg">Delete</button>-->
+         <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+      </article>
       </div>
       </form>
     </div>
