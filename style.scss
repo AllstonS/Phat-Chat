@@ -1,21 +1,24 @@
 
   body{
     font-family:Arial, sans-serif;
-    background-color:#c5f1f7;
+    background-image: url("graffiti.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
   }
 
   nav{
     margin-top:2%;
-    width: 80%;
+    width: 100%;
     border:1px solid grey;
     border-radius:15px;
     margin-bottom:2%;
+    background:#000;
 
     h1{
       font-family:Papyrus;
       text-align:center;
       font-size:50px;
-      color:#120054;
+      color:#c40082;
     }
   }
   .row{
@@ -24,18 +27,20 @@
     margin:0 auto;
 
     }
+
+    p, h4{
+      font-size:1.75em;
+    }
+
+    h4 {
+      font-weight:bold;
+    }
   .chatbox{
+    background-color:#ffffff;
+    opacity:0.8;
     margin:0 auto;
     display:inline-block;
     min-height:250px;
     border:1px solid grey;
-    border-radius:0 15px 15px 0;
+    border-radius:15px;
   }
-  .aside{
-  display:inline-block;
-  border:1px solid grey;
-  border-radius:15px 0 0 15px;
-  min-height:250px;
-  background-color:#c7b5d1;
-
-}
